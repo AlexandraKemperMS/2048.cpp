@@ -126,7 +126,7 @@ std::string drawGraphics(current_game_session_t cgs) {
 
   // 5. Draw anyinstant status feedback, like
   // "Game saved!" (which disappers after next key input).
-  DrawOnlyWhen(str_os, gamestatus[FLAG_SAVED_GAME], GameStateNowSavedPrompt);
+  DrawOnlyWhen(str_os, gamestatus[FLAG_SAVED_GAME], GameBoardNoSaveErrorPrompt);
 
   // 6. Draw any "questions to the player" (from the game) text output
   DrawOnlyWhen(str_os, gamestatus[FLAG_GAME_IS_ASKING_QUESTION_MODE],
